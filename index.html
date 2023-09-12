@@ -21,285 +21,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion 2023 - fusion 23 by dr antino da silva college</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <style>
         /* Set the background image for the entire page */
         body {
-            background-image: url('fusion_logo.jpeg.png'); /* Update with the correct image URL */
-            background-size: cover; /* Adjust the size to cover the entire viewport */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            background-attachment: fixed; /* Keep the background fixed as the content scrolls */
-            font-family: 'Roboto', sans-serif;
-            color: #ffffff; /* Text color on the background image */
-            margin: 0; /* Remove default margin */
-        }
-
-        /* Header Styles */
-        header {
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1; /* Ensure header is above the background image */
-        }
-
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-            text-align: center;
-        }
-
-        /* Navigation Styles */
-        nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        /* Hero Section Styles */
-        .hero {
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for hero section */
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin: 0;
-            color: #ffffff;
-        }
-
-        .hero p {
-            font-size: 24px;
-            color: #ffffff;
-            margin-top: 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #007acc;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 24px;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #00568c;
-        }
-
-        /* Content Section Styles */
-        .content {
-            padding: 50px 0;
-        }
-
-        .content h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #ffffff;
-        }
-
-        .feature-box {
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for feature boxes */
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .feature-box h3 {
-            font-size: 28px;
-            color: #ffffff;
-        }
-
-        .feature-box p {
-            font-size: 18px;
-            color: #ffffff;
-        }
-
-        /* Image Grid Styles */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            gap: 20px; /* Gap between images */
-        }
-
-        .image {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Event Schedule Styles */
-        .schedule-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .schedule-list li {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #ffffff;
-        }
-
-        /* Registration Button Styles */
-        .registration-button {
-            background-color: #007acc;
-            color: #ffffff;
-            font-weight: 700;
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .registration-button:hover {
-            background-color: #00568c;
-        }
-
-        /* Contact Info Styles */
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        .contact-info a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Map Container Styles */
-        .map-container {
-            margin-top: 20px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .map {
-            width: 100%;
-            height: 400px;
-            border: none;
-        }
-
-        /* Thank You Section Styles */
-        .thank-you {
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .thank-you h2 {
-            font-size: 48px;
-            color: #ffffff;
-            margin: 0;
-        }
-
-        .thank-you p {
-            font-size: 24px;
-            color: #ffffff;
-            margin-top: 20px;
-        }
-
-        .thank-you img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for footer */
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 18px;
-            color: #ffffff;
-            margin: 10px 0;
-        }
-
-        /* Complex UI media queries */
-        @media screen and (max-width: 768px) {
-            .hero {
-                padding: 150px 0;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 18px;
-                margin-bottom: 20px;
-            }
-
-            .cta-button {
-                font-size: 16px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .hero {
-                padding: 100px 0;
-            }
-
-            .hero h1 {
-                font-size: 24px;
-            }
-
-            .hero p {
-                font-size: 16px;
-                margin-bottom: 10px;
-            }
-
-            .cta-button {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
-        }
-
-        /* Footer Social Icons Styles */
-        .footer-social {
-            margin-top: 20px;
-        }
-
-        .footer-social a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 20px;
-            margin: 0 10px;
+          background-image: url('fusion_logo.jpeg.png'); /* Update with the correct image URL */
+    background-size: cover; /* Adjust the size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background fixed as the content scrolls */
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* Text color on the background image */
         }
     </style>
-</head>
-<body>
+    
+    <link rel="stylesheet" href="styles.css">
+    
     <header>
         <h1>Welcome to Fusion 2023</h1>
         <nav>
@@ -313,14 +48,12 @@
         </nav>
     </header>
     
-    <div class="hero">
-        <h1>About Fusion 2023</h1>
+    <section id="home">
+        <h2>About Fusion 2023</h2>
         <p>Fusion is an annual inter-college event that celebrates the confluence of talent, creativity, and collaboration.
             It's a dynamic platform that brings together students from various colleges to showcase their skills and passions, putting our college on the map as a hub of innovation and talent. Fusion promises a day filled with diverse competitions, workshops, and cultural performances, providing an excellent opportunity for our college to shine on the inter-collegiate stage.</p>
-        <a href="#registration" class="cta-button">Register Now</a>
-    </div>
 
-    <div class="content" id="home">
+        <!-- Image Grid -->
         <div class="image-grid">
             <div class="image">
                 <img src="college_front.jpeg" alt="college front">
@@ -332,53 +65,53 @@
                 <img src="college_turf.jpeg" alt="college turf">
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="content" id="now-watching">
+      <section id="now-watching">
         <h2>Now Watching: <span id="watching-count">0</span></h2>
     </section>
     
-    <div class="content" id="schedule">
+    <section id="schedule">
         <h2>Event Schedule</h2>
         <p>Below are the possible dates for the event:</p>
-        <img src="september.jpeg" alt="September Calendar" border="0">
-        <ul class="schedule-list">
+        <img src="september.jpeg" alt="" border="0"></a>
+        <ul>
             <li><strong>Option 1:</strong> September 21st - September 23rd</li>
             <li><strong>Option 2:</strong> September 28th - September 30th</li>
         </ul>
-    </div>
+    </section>
     
-    <div class="content" id="registration">
+    <section id="registration">
         <h2>Registration</h2>
-        <p>To register for our event, please <a href="https://forms.gle/sKCyuyvHmydBHqXz5" class="registration-button">click here</a>.</p>
-    </div>
+        <p>To register for our event, please <a href="https://forms.gle/sKCyuyvHmydBHqXz5">click here</a>.</p>
+    </section>
     
-    <div class="content" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need assistance, please feel free to reach out to our support team at <a href="mailto:fusion23ADJC@gmail.com" class="contact-info">fusion23ADJC@gmail.com</a>.</p>
+   <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, please feel free to reach out to our support team at <a href="mailto:fusion23ADJC@gmail.com">fusion23ADJC@gmail.com</a>.</p>
+</section>
+  <section id="location">
+    <h2>Where Are We</h2>
+    <p>Find our college's location on the map:</p>
+    <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3517.166204176554!2d72.83688980606016!3d19.01784887011222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec4107b2cd1%3A0x23faa7d30ced2d2c!2sDr.%20Antonio%20Da%20Silva%20High%20School%20and%20Junior%20College%20of%20Commerce!5e0!3m2!1sen!2sin!4v1694352588539!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  
-    <div class="content" id="location">
-        <h2>Where Are We</h2>
-        <p>Find our college's location on the map:</p>
-        <div class="map-container">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3517.166204176554!2d72.83688980606016!3d19.01784887011222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec4107b2cd1%3A0x23faa7d30ced2d2c!2sDr.%20Antonio%20Da%20Silva%20High%20School%20and%20Junior%20College%20of%20Commerce!5e0!3m2!1sen!2sin!4v1694352588539!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
+</section>
+
+    </section>
     
-    <div class="content" id="thank-you">
+    <!-- Thank You Section -->
+    <section id="thank-you">
         <h2>Thank You for Visiting Fusion 2023</h2>
         <p>We appreciate your time and interest in our event. If you have any questions or feedback, please feel free to <a href="mailto:fusion23adjc@gmail.com">contact us</a>.</p>
-        <img src="thank_you.jpeg" alt="Thank You" border="0">
-    </div>
+        <img src="thank_you.jpeg" alt="" border="0">
+    </section>
     
     <footer>
         <p>&copy; 2023 Fusion 2023. All rights reserved.</p>
-        <!-- Footer Social Icons -->
-        <div class="footer-social">
-            <a href="https://www.instagram.com/itskevindsouzatbh/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.instagram.com/kevins_other_account/" target="_blank"><img src="instagram-icon.png" alt="Kevin's Other Instagram"></a>
-        </div>
+        <p>Website by <a href="https://www.instagram.com/itskevindsouzatbh/">Kevin D'Souza</a></p>
     </footer>
+     <script src="https://raw.githubusercontent.com/kevin22253/fusion23/main/script.js"></script>
 </body>
 </html>
+
