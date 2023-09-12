@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* CSS for the image grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Gap between images */
+        }
+
+        /* CSS for individual images */
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fusion 2023 - Dr. Antino Da Silva College</title>
+    <title>Fusion 2023 - fusion 23 by dr antino da silva college</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -230,22 +246,6 @@
             margin: 10px 0;
         }
 
-        /* Footer Social Media Links */
-        .footer-social {
-            margin-top: 20px;
-        }
-
-        .footer-social a {
-            font-size: 24px;
-            margin: 0 10px;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .footer-social a:hover {
-            text-decoration: underline;
-        }
-
         /* Complex UI media queries */
         @media screen and (max-width: 768px) {
             .hero {
@@ -264,63 +264,38 @@
             .cta-button {
                 font-size: 16px;
             }
+        }
 
-            .feature-box {
-                padding: 20px;
+        @media screen and (max-width: 480px) {
+            .hero {
+                padding: 100px 0;
             }
 
-            .feature-box h3 {
+            .hero h1 {
                 font-size: 24px;
             }
 
-            .feature-box p {
+            .hero p {
                 font-size: 16px;
+                margin-bottom: 10px;
             }
 
-            .image-grid {
-                grid-template-columns: repeat(1, 1fr);
+            .cta-button {
+                font-size: 14px;
+                padding: 8px 16px;
             }
+        }
 
-            .schedule-list li {
-                font-size: 16px;
-            }
+        /* Footer Social Icons Styles */
+        .footer-social {
+            margin-top: 20px;
+        }
 
-            .registration-button {
-                font-size: 16px;
-            }
-
-            .contact-info {
-                margin-top: 10px;
-            }
-
-            .contact-info a {
-                font-size: 16px;
-            }
-
-            .map {
-                height: 300px;
-            }
-
-            .thank-you {
-                padding: 50px 0;
-            }
-
-            .thank-you h2 {
-                font-size: 36px;
-            }
-
-            .thank-you p {
-                font-size: 18px;
-                margin-top: 10px;
-            }
-
-            .thank-you img {
-                max-width: 80%;
-            }
-
-            .footer-social a {
-                font-size: 20px;
-            }
+        .footer-social a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -391,7 +366,7 @@
         </div>
     </div>
     
-    <div class="thank-you" id="thank-you">
+    <div class="content" id="thank-you">
         <h2>Thank You for Visiting Fusion 2023</h2>
         <p>We appreciate your time and interest in our event. If you have any questions or feedback, please feel free to <a href="mailto:fusion23adjc@gmail.com">contact us</a>.</p>
         <img src="thank_you.jpeg" alt="Thank You" border="0">
@@ -399,13 +374,11 @@
     
     <footer>
         <p>&copy; 2023 Fusion 2023. All rights reserved.</p>
+        <!-- Footer Social Icons -->
         <div class="footer-social">
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/itskevindsouzatbh/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/kevins_other_account/" target="_blank"><img src="instagram-icon.png" alt="Kevin's Other Instagram"></a>
         </div>
     </footer>
-    <script src="https://raw.githubusercontent.com/kevin22253/fusion23/main/script.js"></script>
 </body>
 </html>
-
