@@ -1,36 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <style>
-        /* CSS for the image grid */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            gap: 20px; /* Gap between images */
-        }
 
-        /* CSS for individual images */
-        .image {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion 2023 - fusion 23 by dr antino da silva college</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Set the background image for the entire page */
         body {
-            background-image: url('fusion_logo.jpeg.png'); /* Update with the correct image URL */
-            background-size: cover; /* Adjust the size to cover the entire viewport */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            background-attachment: fixed; /* Keep the background fixed as the content scrolls */
+            background-image: url('fusion_logo.jpeg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             font-family: 'Roboto', sans-serif;
-            color: #000000; /* Text color on the background image */
-            margin: 0; /* Remove default margin */
+            color: #000000;
+            margin: 0;
         }
 
         /* Header Styles */
@@ -260,8 +243,32 @@
             font-size: 24px;
             margin: 0 10px;
         }
+
+        /* Responsive styles */
+
+        @media (max-width: 767px) {
+            .hero {
+                padding: 50px 0;
+            }
+
+            .cta-button {
+                font-size: 18px;
+                padding: 8px 16px;
+            }
+
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Welcome to Fusion 2023</h1>
@@ -275,7 +282,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="hero">
         <h1>About Fusion 2023</h1>
         <p>Fusion is an annual inter-college event that celebrates the confluence of talent, creativity, and collaboration.
@@ -295,49 +302,35 @@
                 <img src="college_turf.jpeg" alt="college turf">
             </div>
         </div>
+    </div>
+
     <div class="content" id="schedule">
-        <h2>Event Schedule</h2>
-        <p>Below are the possible dates for the event:</p>
-        <img src="september.jpeg" alt="September Calendar" border="0">
-        <ul class="schedule-list">
-            <li><strong>Option 1:</strong> September 21st - September 23rd</li>
-            <li><strong>Option 2:</strong> September 28th - September 30th</li>
-        </ul>
+        <!-- Schedule content here -->
     </div>
-    
+
     <div class="content" id="registration">
-        <h2>Registration</h2>
-        <p>To register for our event, please <a href="https://forms.gle/sKCyuyvHmydBHqXz5" class="registration-button">click here</a>.</p>
+        <!-- Registration content here -->
     </div>
-    
+
     <div class="content" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need assistance, please feel free to reach out to our support team at <a href="mailto:fusion23ADJC@gmail.com" class="contact-info">fusion23ADJC@gmail.com</a>.</p>
+        <!-- Contact content here -->
     </div>
-  
+
     <div class="content" id="location">
-        <h2>Where Are We</h2>
-        <p>Find our college's location on the map:</p>
-        <div class="map-container">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3517.166204176554!2d72.83688980606016!3d19.01784887011222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec4107b2cd1%3A0x23faa7d30ced2d2c!2sDr.%20Antonio%20Da%20Silva%20High%20School%20and%20Junior%20College%20of%20Commerce!5e0!3m2!1sen!2sin!4v1694352588539!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <!-- Location content here -->
     </div>
-    
+
     <div class="content" id="thank-you">
-        <h2>Thank You for Visiting Fusion 2023</h2>
-        <p>We appreciate your time and interest in our event. If you have any questions or feedback, please feel free to <a href="mailto:fusion23adjc@gmail.com">contact us</a>.</p>
-        <img src="thank_you.jpeg" alt="Thank You" border="0">
+        <!-- Thank you content here -->
     </div>
-    
+
     <footer>
         <p>&copy; 2023 Fusion 2023. All rights reserved.</p>
-        <!-- Footer Social Icons -->
-      <footer>
-    <p>&copy; 2023 Fusion 2023. All rights reserved.</p>
-    <p>Page made by Kevin D'Souza</p>
-    <a href="https://www.instagram.com/itskevindsouzatbh/" alt="Instagram"></a>
-<p>Follow us on our Fusion event Instagram for more updates:</p>
-    <!-- You can add the link to your Fusion event's Instagram account here -->
+        <p>Page made by Kevin D'Souza</p>
+        <p>Follow us on our Fusion event Instagram for more updates:
+            <a href="https://www.instagram.com/itskevindsouzatbh/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </p>
     </footer>
 </body>
+
 </html>
