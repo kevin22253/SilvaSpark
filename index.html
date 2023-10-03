@@ -18,20 +18,20 @@
 
         /* Header Styles */
         header {
-            background-color: #14213d; /* Dark blue background color */
+            background-color: #14213d;
             padding: 10px 0;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1; /* Ensure header is above the background image */
+            z-index: 1;
         }
 
         header h1 {
             font-size: 36px;
             margin: 0;
             text-align: center;
-            color: #ffffff; /* White text color */
+            color: #ffffff;
         }
 
         /* Navigation Styles */
@@ -56,36 +56,35 @@
 
         nav a {
             text-decoration: none;
-            color: #ffffff; /* White text color */
+            color: #ffffff;
             font-weight: 700;
             font-size: 18px;
         }
 
         /* Hero Section Styles */
         .hero {
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for hero section */
-            padding: 100px 0;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 50px 20px;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 36px;
             margin: 0;
-            color: #ffffff; /* White text color */
+            color: #ffffff;
         }
 
         .hero p {
-            font-size: 24px;
-            color: #ffffff; /* White text color */
+            font-size: 18px;
+            color: #ffffff;
             margin-top: 20px;
         }
 
         .cta-button {
-            display: inline-block;
-            background-color: #fca311; /* Orange background color */
-            color: #ffffff; /* White text color */
+            background-color: #fca311;
+            color: #ffffff;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 18px;
             padding: 10px 20px;
             margin-top: 20px;
             text-decoration: none;
@@ -94,67 +93,29 @@
         }
 
         .cta-button:hover {
-            background-color: #e5a00d; /* Darker orange on hover */
+            background-color: #e5a00d;
         }
 
-        /* Content Section Styles */
+        /* Content Styles */
         .content {
-            padding: 50px 0;
-            background-color: #ffffff; /* White background color */
-            color: #000000; /* Black text color */
+            padding: 30px 20px;
         }
 
         .content h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #14213d; /* Dark blue heading color */
-        }
-
-        .feature-box {
-            background-color: #fca311; /* Orange background color */
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .feature-box h3 {
-            font-size: 28px;
-            color: #ffffff; /* White text color */
-        }
-
-        .feature-box p {
-            font-size: 18px;
-            color: #ffffff; /* White text color */
-        }
-
-        /* Image Grid Styles */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            gap: 20px; /* Gap between images */
-        }
-
-        .image {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Event Schedule Styles */
-        .schedule-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .schedule-list li {
-            font-size: 18px;
+            font-size: 24px;
+            color: #14213d;
             margin-bottom: 10px;
-            color: #14213d; /* Dark blue text color */
         }
 
-        /* Registration Button Styles */
+        .content p {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
         .registration-button {
-            background-color: #fca311; /* Orange background color */
-            color: #ffffff; /* White text color */
+            background-color: #fca311;
+            color: #ffffff;
             font-weight: 700;
             padding: 10px 20px;
             font-size: 18px;
@@ -166,105 +127,34 @@
         }
 
         .registration-button:hover {
-            background-color: #e5a00d; /* Darker orange on hover */
+            background-color: #e5a00d;
         }
 
-        /* Contact Info Styles */
-        .contact-info {
-            margin-top: 20px;
+        /* Image Grid Styles */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
         }
 
-        .contact-info a {
-            color: #14213d; /* Dark blue text color */
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        /* Map Container Styles */
-        .map-container {
-            margin-top: 20px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .map {
+        .image {
             width: 100%;
-            height: 400px;
-            border: none;
-        }
-
-        /* Thank You Section Styles */
-        .thank-you {
-            text-align: center;
-            padding: 100px 0;
-        }
-
-        .thank-you h2 {
-            font-size: 48px;
-            color: #14213d; /* Dark blue heading color */
-            margin: 0;
-        }
-
-        .thank-you p {
-            font-size: 24px;
-            color: #000000; /* Black text color */
-            margin-top: 20px;
-        }
-
-        .thank-you img {
-            max-width: 100%;
             height: auto;
         }
 
         /* Footer Styles */
         footer {
-            background-color: #14213d; /* Dark blue background color */
+            background-color: #14213d;
             padding: 20px 0;
             text-align: center;
-            color: #ffffff; /* White text color */
-        }
-
-        footer p {
-            margin: 0;
-            font-weight: 700;
-        }
-
-        /* Footer Social Icons Styles */
-        .footer-social {
-            margin-top: 20px;
+            color: #ffffff;
         }
 
         .footer-social a {
-            color: #ffffff; /* White text color */
+            color: #ffffff;
             text-decoration: none;
             font-size: 24px;
             margin: 0 10px;
-        }
-
-        /* Responsive styles */
-
-        @media (max-width: 767px) {
-            .hero {
-                padding: 50px 0;
-            }
-
-            .cta-button {
-                font-size: 18px;
-                padding: 8px 16px;
-            }
-
-            .image-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 768px) {
-            .image-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
         }
     </style>
 </head>
@@ -275,7 +165,6 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#registration">Registration</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -285,8 +174,7 @@
 
     <div class="hero">
         <h1>About Fusion 2023</h1>
-        <p>Fusion is an annual inter-college event that celebrates the confluence of talent, creativity, and collaboration.
-            It's a dynamic platform that brings together students from various colleges to showcase their skills and passions, putting our college on the map as a hub of innovation and talent. Fusion promises a day filled with diverse competitions, workshops, and cultural performances, providing an excellent opportunity for our college to shine on the inter-collegiate stage.</p>
+        <p>Fusion is an annual inter-college event that celebrates the confluence of talent, creativity, and collaboration. It's a dynamic platform that brings together students from various colleges to showcase their skills and passions, putting our college on the map as a hub of innovation and talent. Fusion promises a day filled with diverse competitions, workshops, and cultural performances, providing an excellent opportunity for our college to shine on the inter-collegiate stage.</p>
         <a href="#registration" class="cta-button">Register Now</a>
     </div>
 
@@ -305,32 +193,46 @@
     </div>
 
     <div class="content" id="schedule">
-        <!-- Schedule content here -->
+        <h2>Event Schedule</h2>
+        <p>Below are the possible dates for the event:</p>
+        <img src="september.jpeg" alt="September Calendar">
+        <ul>
+            <li><strong>Option 1:</strong> September 21st - September 23rd</li>
+            <li><strong>Option 2:</strong> September 28th - September 30th</li>
+        </ul>
     </div>
 
     <div class="content" id="registration">
-        <!-- Registration content here -->
+        <h2>Registration</h2>
+        <p>To register for our event, please <a href="https://forms.gle/sKCyuyvHmydBHqXz5" class="registration-button">click here</a>.</p>
     </div>
 
     <div class="content" id="contact">
-        <!-- Contact content here -->
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please feel free to reach out to our support team at <a href="mailto:fusion23ADJC@gmail.com">fusion23ADJC@gmail.com</a>.</p>
     </div>
 
     <div class="content" id="location">
-        <!-- Location content here -->
+        <h2>Where Are We</h2>
+        <p>Find our college's location on the map:</p>
+        <div class="map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3517.166204176554!2d72.83688980606016!3d19.01784887011222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cec4107b2cd1%3A0x23faa7d30ced2d2c!2sDr.%20Antonio%20Da%20Silva%20High%20School%20and%20Junior%20College%20of%20Commerce!5e0!3m2!1sen!2sin!4v1694352588539!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
 
     <div class="content" id="thank-you">
-        <!-- Thank you content here -->
+        <h2>Thank You for Visiting Fusion 2023</h2>
+        <p>We appreciate your time and interest in our event. If you have any questions or feedback, please feel free to <a href="mailto:fusion23adjc@gmail.com">contact us</a>.</p>
+        <img src="thank_you.jpeg" alt="Thank You">
     </div>
 
     <footer>
         <p>&copy; 2023 Fusion 2023. All rights reserved.</p>
-        <p>Page made by Kevin D'Souza</p>
-        <p>Follow us on our Fusion event Instagram for more updates:
-            <a href="https://www.instagram.com/itskevindsouzatbh/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </p>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/itskevindsouzatbh/" target="_blank">Instagram</a>
+        </div>
     </footer>
 </body>
 
 </html>
+
