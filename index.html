@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion 2023 - silvaspark by dr antino da silva college</title>
     <style>
-       body {
+        body {
             background-color: #b8e0c5; /* Light Green Background Color */
             color: #000000; /* Black Text Color */
             font-family: 'Roboto', sans-serif;
@@ -97,6 +97,28 @@
             background-color: #e5a00d;
         }
 
+        /* Countdown Timer Styles */
+        .countdown-timer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #countdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #countdown > div {
+            margin: 0 10px;
+        }
+
         /* Content Styles */
         .content {
             padding: 20px;
@@ -142,42 +164,22 @@
             width: 100%;
             height: auto;
         }
- .countdown-timer {
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-            color: #ffffff; /* White text color */
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners */
+
+        /* Footer Styles */
+        footer {
+            background-color: #00343f;
+            padding: 20px 0;
             text-align: center;
-            margin-top: 20px; /* Adjust margin as needed */
+            color: #ffffff;
         }
 
-        #countdown {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
+        .footer-social a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px;
         }
-
-        #countdown > div {
-            margin: 0 10px; /* Spacing between countdown elements */
-        }
-      /* Footer Styles */
-      footer {
-    background-color: #00343f;
-    padding: 20px 0;
-    text-align: center;
-    color: #ffffff;
-}
-
-.footer-social a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0 10px;
-}
-</style>
-
+    </style>
 </head>
 
 <body>
@@ -194,22 +196,21 @@
         </nav>
     </header>
 
-   <div class="hero">
-        <h1>Welcome to Silva Spark 2023</h1>
+    <div class="hero">
+        <h1>About Silvaspark</h1>
         <p>Silva Spark is an annual inter-college extravaganza that celebrates the fusion of talent, creativity, and collaboration. It serves as a vibrant platform, uniting students from diverse colleges to showcase their skills and passions, thereby establishing our college as a thriving hub of innovation and talent. Silva Spark guarantees a day brimming with diverse competitions, enriching workshops, and captivating cultural performances. This event offers a golden opportunity for our college to shine brightly on the inter-collegiate stage.</p>
         <a href="#registration" class="cta-button">Register Now</a>
-    </div>   
-<body>
-        <!-- Countdown Timer Section -->
-        <div class="countdown-timer">
+    </div>
+
+    <!-- Countdown Timer Section -->
+    <div class="countdown-timer">
         <h2>Event Countdown</h2>
         <div id="countdown">
             <div id="days"></div>
             <div id="hours"></div>
-            <div id="minutes"></div>
+            <div id "minutes"></div>
             <div id="seconds"></div>
         </div>
-    </div>
     </div>
 
     <div class="content" id="home">
@@ -229,12 +230,12 @@
     <div class="content" id="schedule">
         <h2>Event Schedule</h2>
         <p>Below are the dates and time for the event:</p>
-        <img src="decemeber.jpeg.jpg" alt="december Calendar">
+        <img src="december.jpeg.jpg" alt="December Calendar">
         <ul>
-            <li> December 14 - 15 time: 10am to 7pm 🕖 </li>
+            <li>December 14 - 15, Time: 10am to 7pm 🕖</li>
         </ul>
-    <div class="content" id="team">
-        
+    </div>
+
     <div class="content" id="registration">
         <h2>Registration</h2>
         <p>To register for our event, please <a href="https://forms.gle/CF7fZST3JS8SDz9F6" class="registration-button">click here</a>.</p>
@@ -244,15 +245,18 @@
         <h2>Contact Us</h2>
         <p>If you have any questions or need assistance, please feel free to reach out to our support team at <a href="mailto:silvasparkadjc@gmail.com">silvasparkadjc@gmail.com</a>.</p>
         <p><a href="#team">Meet our team!</a></p> <!-- Link to the Team section -->
-    </div> 
-     <footer>
+    </div>
+
+    <footer>
         <p>&copy; 2023 Fusion 2023. All rights reserved.</p>
         <p>Website created by Kevin D'Souza</p>
         <div class="footer-social">
             <a href="https://www.instagram.com/silva_spark23/" target="_blank">Instagram</a>
         </div>
     </footer>
-        
+
     <script src="script.js"></script>
 </body>
+
+</html>
 
