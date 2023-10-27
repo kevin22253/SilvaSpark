@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Set the event date and time for Silva Spark (year, month (0-indexed), day, hour, minute, second)
-    const eventDate = new Date(2023, 11, 15, 10, 0, 0).getTime();
+    const eventDate = new Date(2023, 11, 14, 10, 0, 0).getTime(); // December is month 11 in JavaScript's Date object (0-indexed)
 
     const updateTimer = setInterval(function() {
         const currentDate = new Date().getTime();
