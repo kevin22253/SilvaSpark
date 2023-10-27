@@ -97,26 +97,32 @@
             background-color: #e5a00d;
         }
 
-        /* Countdown Timer Styles */
+       .ribbon {
+            background-image: url('ribbon.gif'); /* Path to your animated ribbon GIF */
+            background-size: cover;
+            height: 100px; /* Adjust the height of the ribbon */
+            position: relative;
+            margin-bottom: 20px;
+        }
+
         .countdown-timer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #ffffff;
+            background-color: #1abc9c;
+            color: #fff;
             padding: 20px;
             border-radius: 10px;
             text-align: center;
-            margin-top: 20px;
+            font-family: 'Arial', sans-serif;
         }
 
-        #countdown {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
+        .countdown-item {
+            display: inline-block;
+            margin: 0 20px;
+            font-size: 36px;
         }
 
-        #countdown > div {
-            margin: 0 10px;
+        .countdown-label {
+            font-size: 18px;
+            color: #ecf0f1;
         }
 
         /* Content Styles */
@@ -202,16 +208,19 @@
         <a href="#registration" class="cta-button">Register Now</a>
     </div>
 
-    <!-- Countdown Timer Section -->
+     <div class="ribbon"></div>
+
     <div class="countdown-timer">
-        <h2>Event Countdown</h2>
-       <div id="countdown">
-    <div id="days"></div>
-    <div id="hours"></div>
-    <div id="minutes"></div>
-    <div id="seconds"></div>
-</div>
+        <div class="countdown-item" id="days">0</div>
+        <div class="countdown-label">days</div>
+        <div class="countdown-item" id="hours">0</div>
+        <div class="countdown-label">hours</div>
+        <div class="countdown-item" id="minutes">0</div>
+        <div class="countdown-label">minutes</div>
+        <div class="countdown-item" id="seconds">0</div>
+        <div class="countdown-label">seconds</div>
     </div>
+
 
     <div class="content" id="home">
         <div class="image-grid">
